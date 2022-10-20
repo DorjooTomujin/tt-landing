@@ -19,8 +19,9 @@ const theme = extendTheme({
         }
     },
     colors: {
-        over: {
-            100: '#d9d9d9'
+        main: {
+            neon: '#00EBB1',
+            purple: '#3F1DA8',
         }
     }
 })

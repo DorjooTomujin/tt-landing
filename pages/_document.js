@@ -4,7 +4,9 @@ export default class Document extends NextDocument {
     render() {
         return (
             <Html lang='en'>
-                <Head/>
+                <Head>
+                {/* <link rel="stylesheet" href="../src/style.css" /> */}
+                </Head>
                 <body>
                     <ColorModeScript/>
                     <Main/>
