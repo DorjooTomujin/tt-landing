@@ -66,7 +66,7 @@ export default function Home() {
         <Box
           w={["80%", "70%", "60%", "55%", "50%"]}
           h={["80%", "70%", "60%", "55%", "50%"]}
-          top={["50px", "60px", "80px", "100px", "100px"]}
+          top={["120px"]}
           pos={"absolute"}
           bgImage="/assets/svgs/hr.svg"
           bgSize={"contain"}
@@ -76,7 +76,7 @@ export default function Home() {
         <Heading
           color={"#fff"}
           pos="absolute"
-          bottom={[100, 60, 40, 20, 20]}
+          bottom={[100, '40px', '40px', '20px', '20px']}
           zIndex={2}
           display="inline"
           fontSize={[40, 40, 45, 50, 60]}
@@ -124,11 +124,12 @@ export default function Home() {
           grow startups
         </Text>
         <Box h={["20vh", "15vh", "10vh", "5vh", "0"]} />
-        <HStack>
-          <Image pos={"relative"} left={"-50%"} src="/assets/svgs/bg.svg" />
+        <HStack w='100vw'>
+          <Image sx={{ m: "0 !important" }}  pos={"relative"} left={"-50%"} src="/assets/svgs/bg.svg" />
           <Image
             sx={{ m: "0 !important" }}
             pos={"relative"}
+            // transform={'translateX(-50%)'}
             right={"50%"}
             src="/assets/svgs/bg.svg"
           />
@@ -140,25 +141,26 @@ export default function Home() {
           fontWeight={"medium"}
           textAlign="center"
           pos={"absolute"}
-          bottom={"50px"}
+          bottom={"40px"}
+          
           color='white'
           zIndex={10}
         >
           Our achievements so far
         </Heading>
-
+          <Box h={10}/>
         <Grid
           gridTemplateColumns={"repeat(2, 1fr)"}
           gap={['4vw',"2vw"]}
           pos="absolute"
-          bottom={["55vw","45vw",'32vw',"14vw"]}
+          bottom={["calc(35vh - 30vw + 20px)","45vw",'32vw',"20vw", '14vw']}
           transform={"rotate(45deg)"}
         >
           <GridItem>
             <IconBg>
               <Box
-                w={['23vw','23vw', '18vw', "13vw","6.4vw"]}
-                h={['23vw','23vw', '18vw', "13vw","6.4vw"]}
+                w={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
+                h={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
                 display="flex"
                 alignItems={"center"}
                 justifyContent="center"
@@ -175,8 +177,8 @@ export default function Home() {
           <GridItem>
             <IconBg>
               <Box
-                w={['23vw','23vw', '18vw', "13vw","6.4vw"]}
-                h={['23vw','23vw', '18vw', "13vw","6.4vw"]}
+                w={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
+                h={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
                 display="flex"
                 alignItems={"center"}
                 justifyContent="center"
@@ -192,8 +194,8 @@ export default function Home() {
           <GridItem>
             <IconBg>
               <Box
-                w={['23vw','23vw', '18vw', "13vw","6.4vw"]}
-                h={['23vw','23vw', '18vw', "13vw","6.4vw"]}
+                w={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
+                h={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
                 display="flex"
                 alignItems={"center"}
                 justifyContent="center"
@@ -209,8 +211,8 @@ export default function Home() {
           <GridItem>
             <IconBg>
               <Box
-                w={['23vw','23vw', '18vw', "13vw","6.4vw"]}
-                h={['23vw','23vw', '18vw', "13vw","6.4vw"]}
+                w={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
+                h={['calc(23vh - 23vw)','23vw', '18vw', "13vw","6.4vw"]}
                 display="flex"
                 alignItems={"center"}
                 justifyContent="center"
@@ -224,7 +226,7 @@ export default function Home() {
             </IconBg>
           </GridItem>
         </Grid>
-        <Box h={['150vw', '80vw', '60vw', '20vw', '0']}/>
+        <Box h={['150vw', '80vw', '60vw', '30vw', '0']}/>
       </VStack>
       <Box h={[0, '5vw', 0]}/>
       <VStack
@@ -238,7 +240,7 @@ export default function Home() {
      
       >
         <Box h="full" w="full" bg={"black"} pos="absolute" zIndex={-1} />
-        <Box h={["55vw","60vw",'8vw', '100px', '5vw']} />
+        <Box h={["60vw","60vw",'8vw', '100px', '5vw']} />
         <Heading
           color={"#fff"}
           fontSize={[40, 55, 35, 50, 60]}
@@ -257,7 +259,7 @@ export default function Home() {
           with our technical and business expertise, we incubate, nourish and
           grow startups
         </Text>
-        <Box h={["55vw",'75vw',0, 0, 'calc(30vw - 100px)']} />
+        <Box h={["60vw",'75vw',0, 0, 'calc(30vw - 100px)']} />
       </VStack>
       <VStack
         w={"full"}
