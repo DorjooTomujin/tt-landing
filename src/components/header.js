@@ -12,13 +12,13 @@ import {
   Link,
   VStack,
 } from "@chakra-ui/react";
-
-export const Navbar = ({ isOpen, onOpen, onClose, ref, w,l }) => {
+export const Navbar = ({ isOpen, onOpen, onClose, ref }) => {
+  
   
   return (
     <>
-      {!l && w != undefined && w > 960 && (
-        <HStack
+      <Box display={['none', 'none', 'none', 'flex']}>
+      <HStack
           justifyContent={"space-between"}
           alignItems="center"
           w="full"
@@ -58,15 +58,15 @@ export const Navbar = ({ isOpen, onOpen, onClose, ref, w,l }) => {
             Contact Us
           </Button>
         </HStack>
-      )} 
-      {!l && w !== undefined && w <= 960 && (
-        <NavbarMobile
+      </Box>
+      <Box display={['flex', 'flex', 'flex', 'none']} >
+      <NavbarMobile
           isOpen={isOpen}
           onClose={onClose}
           onOpen={onOpen}
           ref={ref}
         />
-      )}
+      </Box>
     </>
   );
 };

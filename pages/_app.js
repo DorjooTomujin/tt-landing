@@ -9,17 +9,10 @@ import { Navbar } from '../src/components/header'
 import { useEffect, useRef, useState } from 'react'
 function MyApp({ Component, pageProps }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const [width, setWidth] = useState(1000)
-  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    setLoading(true)
-    setWidth(globalThis.screen.width)
-    setLoading(false)
-  }, [])
 
   return (
     <ChakraProvider resetCSS theme={theme}>
-        <Navbar isOpen={isOpen} onOpen={onOpen} onClose={onClose} w={width}  l={loading}/>
+        <Navbar isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
       <Layout>
         <Component {...pageProps} />
       </Layout>
