@@ -42,18 +42,19 @@ export default function Home() {
           // })
      }, []);
      return (
-          <VStack bg={"main.purple"}>
-               <VStack
-                    w={"full"}
-                    h={["100vh"]}
+          <VStack bg={""}>
+              <Box pt={'115px'} w='full' bg='black'>
+              <VStack
+                    w={"100vw"}
+                    h={["50vw"]}
                     pos={"relative"}
-                    bg="black"
-                    pt={"115px"}
+                   
+                    
                     overflow={"hidden"}
                >
                     <Box
-                         w="300vw"
-                         h="100vh"
+                         w="full"
+                         h="full"
                          pos={"sticky"}
                          bgImage="/assets/svgs/header.svg"
                          bgPos={"top center"}
@@ -86,6 +87,7 @@ export default function Home() {
                          Emowering Lives Through Technology Forever
                     </Heading>
                </VStack>
+              </Box>
                <VStack
                     w={"full"}
                     h={["100vh", "auto"]}
@@ -96,7 +98,7 @@ export default function Home() {
                     <Box
                          pos="absolute"
                          top={0}
-                         bgGradient="linear(to-b, black,  #3F1DA8 )"
+                         
                          h={[
                               "calc(50% + 12.5vh - 1rem)",
                               "calc(50% + 10vh - 1rem)",
@@ -116,7 +118,7 @@ export default function Home() {
                          transform={"translateY(-100%)"}
                          textAlign="center"
                          zIndex={2}
-                         color="white"
+                         color=""
                     >
                          We are a technology company that understands complexity
                          of lives and with our technical and business expertise,
@@ -146,7 +148,7 @@ export default function Home() {
                          textAlign="center"
                          pos={"absolute"}
                          bottom={"40px"}
-                         color="white"
+                         color=""
                          zIndex={10}
                     >
                          Our achievements so far

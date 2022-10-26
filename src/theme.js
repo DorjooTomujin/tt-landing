@@ -41,7 +41,7 @@ const theme = extendTheme({
      styles: {
           global: {
                body: {
-                    color: "#3F1DA8",
+                    color: "black",
                },
           },
      },

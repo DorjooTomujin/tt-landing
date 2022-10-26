@@ -1,3 +1,7 @@
+body {
+     overflow-x: hidden !important;
+}
+
 .big__arrow {
      animation: floating 1.5s ease infinite;
 }
